@@ -46,20 +46,24 @@ namespace Questions
                 Console.WriteLine(answ);
             }
         }
-         /* public bool GetAnswer(bool Answer.answers())
-          {
-            foreach (Answer answ in answers)
-            {
-                if (bool == true)
-                {
-                    return answ;
-                }
-                else
-                {
-                    return 0;
-                }
-            } */
-                
-          } 
+        /* public bool GetAnswer(bool Answer.answers())
+         {
+           foreach (Answer answ in answers)
+           {
+               if (bool == true)
+               {
+                   return answ;
+               }
+               else
+               {
+                   return 0;
+               }
+           } 
+
+         } */
+        public Answer Get(int index)
+        {
+            return answers[index];
+        }
     }
 }

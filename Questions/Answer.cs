@@ -24,7 +24,7 @@ namespace Questions
         public override string ToString()
         {
             string a = $"{Text}";
-            return a; 
+            return a;
         }
     }
 }

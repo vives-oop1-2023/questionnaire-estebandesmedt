@@ -12,8 +12,12 @@
             question.Add(new Answer("Biden", true));
             question.Add(new Answer("Jaennine", false));
 
-            Console.WriteLine(question.CountAnswers());
             question.showAnswer();
+            Console.WriteLine($"The amount of answers: {question.CountAnswers()}");
+
+            Console.Write($"Give a question index(0-{question.CountAnswers()-1}): ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(question.Get(x));
 
         }
     }
