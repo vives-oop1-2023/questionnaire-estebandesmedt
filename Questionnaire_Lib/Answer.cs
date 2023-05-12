@@ -20,11 +20,9 @@ namespace Questions
         {
             return $"{Text},{IsCorrect}";
         }
-
         public override string ToString()
         {
-            string a = $"{Text}";
-            return a;
+            return $"{Text}";
         }
     }
 }
