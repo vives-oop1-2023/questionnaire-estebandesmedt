@@ -28,7 +28,7 @@ by Esteban Desmedt
     <li></li>
     <li></li>
 </ul>
-```pt
+```diff
 hello
 ```
 
