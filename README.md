@@ -18,13 +18,13 @@ by Esteban Desmedt
     <img src="./Images/QuestionClass3.jpg" alt="QuestionClass3">
     <br></br>
     <li> Designing the WPF application layout</li>
-    <li> Adding functionality:</li>µ
+    <li> Adding functionality:</li>
     <ul>
-    <li>Next button</li>
-    <li>Scoredisplay</li>
-    <li>Answer Buttons</li>
+    <li>"Next" button</li>
+    <li>"Scoredisplay"</li>
+    <li>"Answer" Buttons</li>
     </ul>
-    <li></li>
+    <li> Coding the code behind each button and the logics connecting the triviaAPI, containing the questions, with the Question class and application</li>
     <li></li>
     <li></li>
 </ul>
