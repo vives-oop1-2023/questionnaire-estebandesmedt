@@ -20,9 +20,9 @@ by Esteban Desmedt
     <li> Designing the WPF application layout</li>
     <li> Adding functionality:</li>
     <ul>
-    <li>"Next" button</li>
-    <li>"Scoredisplay"</li>
-    <li>"Answer" Buttons</li>
+    <li>"Next" button - Showing the next question</li>
+    <li>"Scoredisplay" - Displaying the question you're on</li>
+    <li>"Answer" Buttons - Displaying the answers</li>
     </ul>
     <li> Coding the code behind each button and the logics connecting the triviaAPI, containing the questions, with the Question class and application</li>
     <li></li>
@@ -31,6 +31,12 @@ by Esteban Desmedt
 
 <h3> Future changes </h3>
 <hr></hr>
+    <li>Scoreboard implementation</li>
+    <li>Checking for correct question</li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 
 <h3> Licensing </h3>
 <hr></hr>
