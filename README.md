@@ -8,6 +8,18 @@ by Esteban Desmedt
 
 <h3> Update schedule </h3>
 <hr></hr>
+<ul>
+    <li> Creating the Question and Answer class in the Questionnaire library</li>
+    <img source="./images/AnswerClass.jpg">
+    <li> Designing the WPF application layout</li>
+    <ul>
+    <li></li>
+    </ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 
 <h3> Future changes </h3>
 <hr></hr>
