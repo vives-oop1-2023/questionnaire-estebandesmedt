@@ -28,14 +28,14 @@ by Esteban Desmedt
     <li></li>
     <li></li>
 </ul>
-```diff
-hello
-```
-
 <h3> Future changes </h3>
 <hr></hr>
     <li>Scoreboard implementation</li>
     <li>Checking for correct question</li>
+    <li>Button turns green when correct, red when wrong</li>
+    <li>You go to the next question when answering, this change would make it possible to change the next button to a "Start" button</li>
+    <li>Disable the hovering of a button before you press the button to get the first question</li>
+    <li>"Start" button in the middle till you press start, then the questions appear and the button disappears but Adding a skip button on the spot if the "Next" button right now.</li>
     <li></li>
     <li></li>
     <li></li>
