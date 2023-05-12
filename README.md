@@ -16,11 +16,14 @@ by Esteban Desmedt
     <img src="./Images/QuestionClass1.jpg" alt="QuestionClass1">
     <img src="./Images/QuestionClass2.jpg" alt="QuestionClass2">
     <img src="./Images/QuestionClass3.jpg" alt="QuestionClass3">
+    <br></br>
     <li> Designing the WPF application layout</li>
+    <li> Adding functionality:</li>µ
     <ul>
-    <li></li>
+    <li>Next button</li>
+    <li>Scoredisplay</li>
+    <li>Answer Buttons</li>
     </ul>
-    <li></li>
     <li></li>
     <li></li>
     <li></li>
