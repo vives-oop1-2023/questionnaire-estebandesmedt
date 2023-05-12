@@ -10,7 +10,7 @@ by Esteban Desmedt
 <hr></hr>
 <ul>
     <li> Creating the Question and Answer class in the Questionnaire library</li>
-    <img source="./images/AnswerClass.jpg">
+    <img src="./images/AnswerClass.jpg" alt="AnswerClass">
     <li> Designing the WPF application layout</li>
     <ul>
     <li></li>
