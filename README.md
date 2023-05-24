@@ -1,8 +1,37 @@
 # Questionnaire Application
-Welcome to this application made by <b> Esteban Desmedt </b>
+Welcome to this application made by <b> Esteban Desmedt </b>. This application was made as part of a school project. The program was made entirely in C# and developed for the subject Object Oriënted Programming, given at Vives (Xaveriaenenstraat 10, 8200 Brugge).
 <h3> UML Diagram </h3>
 <hr></hr>
 <img src="./Images/uml.jpg" alt="UML">
+
+
+<div class="toc">
+
+## Table of Contents
+
+- [Section 1](#section-1)
+- [Section 2](#section-2)
+- [Section 3](#section-3)
+
+</div>
+
+<style>
+@media screen and (max-width: 600px) {
+  .toc {
+    display: none;
+  }
+}
+</style>
+
+## Section 1
+Content of section 1.
+
+## Section 2
+Content of section 2.
+
+## Section 3
+Content of section 3.
+
 
 <h3> User guide </h3>
 <hr></hr>
