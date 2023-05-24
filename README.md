@@ -9,7 +9,7 @@ Welcome to this application made by <b> Esteban Desmedt </b>. This application w
 
 ## Table of Contents
 
-- [User guide](#User guide)
+- [User guide](#section-1)
 - [Section 2](#section-2)
 - [Section 3](#section-3)
 
@@ -23,7 +23,7 @@ Welcome to this application made by <b> Esteban Desmedt </b>. This application w
 }
 </style>
 
-## Section 1
+## User guide
 Content of section 1.
 
 ## Section 2
@@ -33,7 +33,7 @@ Content of section 2.
 Content of section 3.
 
 
-<h3> ## User guide </h3>
+<h3> User guide </h3>
 <hr></hr>
 
 <h3> Update schedule </h3>
