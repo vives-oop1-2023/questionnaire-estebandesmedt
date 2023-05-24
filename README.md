@@ -53,7 +53,7 @@ On this page you will see a few of your stats from the previous game. First you 
     <li> Adding a Login form</li>
     <li> Adding a scoreboard</li>
     <li> Adding two new methods</li>
-    <img src="./Images/newMethod.jpg" alt="newmethod">
+    <img src="./Images/NewMethod.jpg" alt="newmethod">
 </ul>
 
 ## Future changes
