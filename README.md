@@ -1,5 +1,5 @@
-# Fraction Application
-by Esteban Desmedt
+# Questionnaire Application
+Welcome to this application made by <b> Esteban Desmedt </b>
 <h3> UML Diagram </h3>
 <hr></hr>
 <img src="./Images/uml.jpg" alt="UML">
