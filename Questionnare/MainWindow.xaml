@@ -8,6 +8,34 @@
         Title="MainWindow" Height="450" Width="800" 
         MinHeight="500px" MinWidth="800px"
         Background="#FFF8FF76">
+    <Window.Resources>
+        <Style x:Key="DisabledButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#E0E0E0"/>
+            <Setter Property="Foreground" Value="#808080"/>
+            <Setter Property="Cursor" Value="Arrow"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Padding="{TemplateBinding Padding}"
+                                SnapsToDevicePixels="True">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="#F0F0F0"/>
+                    <Setter Property="Foreground" Value="#C0C0C0"/>
+                    <Setter Property="Cursor" Value="Arrow"/>
+                    <Setter Property="IsHitTestVisible" Value="False"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.Background>
             <ImageBrush
@@ -28,6 +56,17 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="10" />
         </Grid.RowDefinitions>
+        <StackPanel
+            Grid.Row="3"
+            Grid.Column="2">
+            <TextBlock
+                Text=""
+                FontSize="20px"
+                HorizontalAlignment="Center"
+                Foreground="#FFFDFF00"
+                x:Name="NickNameBox"
+                />
+        </StackPanel>
         <TextBlock
             Grid.Row="1"
             Grid.Column="2"
@@ -67,7 +106,9 @@
                     MinWidth="400px"
                     TextChanged="QuestionBox_TextChanged"
                     BorderThickness="0px"
-                    TextWrapping="Wrap" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" Foreground="Black" Background="{x:Null}"
+                    TextWrapping="Wrap" SelectionBrush="{x:Null}" 
+                    SelectionTextBrush="{x:Null}" Foreground="White" 
+                    Background="{x:Null}"
                     >
                     <TextBox.BorderBrush>
                         <ImageBrush/>
@@ -79,13 +120,15 @@
                 <Button
                     FontSize="16px"
                     Content=""
-                    HorizontalAlignment="Center"
                     Width="auto"
                     Height="auto"
                     MinHeight="55px"
-                    Margin="5px"
                     x:Name="Answer1"
-                    MinWidth="400px" Click="Answer1_Click"
+                    MinWidth="400px" Click="Answer_Click"
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+                    Margin="5px"
+                    Style="{StaticResource DisabledButtonStyle}"
                     >
                     <Button.BorderBrush>
                         <ImageBrush/>
@@ -107,7 +150,9 @@
                     MinHeight="55px"
                     MinWidth="400px"
                     Height="auto"
-                    x:Name="Answer2" Click="Answer2_Click"
+                    x:Name="Answer2" Click="Answer_Click"
+                    Foreground="White"
+                    Style="{StaticResource DisabledButtonStyle}"
                     >
                     <Button.BorderBrush>
                         <ImageBrush/>
@@ -128,7 +173,9 @@
                     Height="auto"
                     MinHeight="55px"
                     Margin="5px"
-                    x:Name="Answer3" Click="Answer3_Click"
+                    x:Name="Answer3" Click="Answer_Click"
+                    Foreground="White"
+                    Style="{StaticResource DisabledButtonStyle}"
                     >
                     <Button.BorderBrush>
                         <ImageBrush/>
@@ -149,7 +196,9 @@
                     Margin="5px"
                     MinHeight="55px"
                     x:Name="Answer4"
-                    MinWidth="400px" Click="Answer4_Click"
+                    MinWidth="400px" Click="Answer_Click"
+                    Foreground="White"
+                    Style="{StaticResource DisabledButtonStyle}"
                     >
                     <Button.BorderBrush>
                         <ImageBrush/>
@@ -177,6 +226,28 @@
                     <ImageBrush/>
                 </Button.Background>
             </Button>
+            <Button
+                MinHeight="30px"
+                Margin="0 20 0 1"
+                BorderBrush="#FFFDFF00"
+                Foreground="#FFFDFF00"
+                BorderThickness="3px"
+                Content="Score"
+                FontSize="30px" Background="Black"
+                />
+            <Button
+                MinHeight="70px"
+                BorderBrush="#FFFDFF00"
+                Foreground="#FFFDFF00"
+                BorderThickness="3px"
+                Content="0/0"
+                FontSize="30px"
+                x:Name="ScoreOnTwelf"
+                >
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
         </StackPanel>
         <StackPanel
             Grid.Column="3"
@@ -194,6 +265,15 @@
                     <ImageBrush/>
                 </Button.Background>
             </Button>
+        </StackPanel>
+        <StackPanel
+            Grid.Row="3"
+            Grid.Column="2">
+            <TextBlock
+                x:Name="Result1"
+                Text="">
+            </TextBlock>
+
         </StackPanel>
     </Grid>
 </Window>

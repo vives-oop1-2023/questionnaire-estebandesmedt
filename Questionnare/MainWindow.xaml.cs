@@ -16,6 +16,9 @@ using TriviaApiLibrary;
 using Questionnare;
 using Questions;
 using System.Configuration;
+using System.Reflection;
+using Newtonsoft.Json.Linq;
+using System.Windows.Threading;
 
 namespace Questionnare
 {
@@ -25,72 +28,154 @@ namespace Questionnare
     public partial class MainWindow : Window, IQuestionHandler
     {
         private int ScoredisplayCount = 0;
+        private int Score = 0;
+        Question question1;
+        public object question { get; private set; }
+        private bool isFirstQuestion = true;
+        private DispatcherTimer timer;
+        private TimeSpan elapsedTime;
 
 
-        public MainWindow()
+        public MainWindow(string nickname)
         {
             InitializeComponent();
             QuestionBox.IsReadOnly = true;
+            NickNameBox.Text = $"Username: {nickname}";
+
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
         }
 
         public void ProcessQuestion(TriviaMultipleChoiceQuestion question)
         {
-            Question question1 = new Question(question.Question.Text);
-            QuestionBox.Text = question.Question.Text;
+            if (isFirstQuestion)
+            {
+                isFirstQuestion = false;
+                timer.Start();
+            }
+            question1 = new Question(question.Question.Text);
 
-            List<string> answerOptions = new List<string>
-    {
-        question.CorrectAnswer,
-        question.IncorrectAnswers[0],
-        question.IncorrectAnswers[1],
-        question.IncorrectAnswers[2]
-    };
+            question1.Text = question.Question.Text;
+            question1.Add(new Answer(question.CorrectAnswer, true));
+            question1.Add(new Answer(question.IncorrectAnswers[0], false));
+            question1.Add(new Answer(question.IncorrectAnswers[1], false));
+            question1.Add(new Answer(question.IncorrectAnswers[2], false));
 
-            question1.Randomize(answerOptions);
+            question1.Randomize();
 
-            Answer1.Content = answerOptions[0];
-            Answer2.Content = answerOptions[1];
-            Answer3.Content = answerOptions[2];
-            Answer4.Content = answerOptions[3];
+            QuestionBox.Text = question1.Text;
+            Answer1.Content = question1.Get(0);
+            Answer2.Content = question1.Get(1);
+            Answer3.Content = question1.Get(2);
+            Answer4.Content = question1.Get(3);
+
+            Answer1.Tag = question1.Get(0);
+            Answer2.Tag = question1.Get(1);
+            Answer3.Tag = question1.Get(2);
+            Answer4.Tag = question1.Get(3);
         }
 
-
-        private void NextButton_Click(object sender, RoutedEventArgs e)
+        private async void NextButton_Click(object sender, RoutedEventArgs e)
         {
-            TriviaApiRequester.RequestRandomQuestion(this);
+            EnableButtons();
+            await TriviaApiRequester.RequestRandomQuestion(this);
 
-            ScoredisplayCount++;
-            Scoredisplay.Content = $"{ScoredisplayCount}/12";
+            if (ScoredisplayCount < 12)
+            {
+                ScoredisplayCount++;
+                Scoredisplay.Content = $"{ScoredisplayCount}/12";
+            }
+            else if (ScoredisplayCount == 12)
+            {
+                Scoreboard scoreboard = new Scoreboard(ScoredisplayCount, Score, elapsedTime);
+                timer.Stop();
+                scoreboard.Show();
+                this.Close();
+            }
+
+            //Reset of background color after answer
+            Answer1.Background = default;
+            Answer2.Background = default;
+            Answer3.Background = default;
+            Answer4.Background = default;
+
+            //Reset of Border
+            Answer1.BorderBrush = default;
+            Answer2.BorderBrush = default;
+            Answer3.BorderBrush = default;
+            Answer4.BorderBrush = default;
         }
 
         private void QuestionBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+
         }
 
-        private void Answer1_Click(object sender, RoutedEventArgs e)
+        private void Answer_Click(object sender, RoutedEventArgs e)
         {
-            
+            Answer answer = (Answer)((Button)sender).Tag;
+            if (answer.IsCorrect)
+            {
+                Score++;
+                ((Button)sender).Background = Brushes.Green;
+                ((Button)sender).BorderBrush = Brushes.Black;
+                DisableButtons();
+            }
+            else
+            {
+                ((Button)sender).Background = Brushes.Red;
+                ((Button)sender).BorderBrush = Brushes.Black;
+                DisableButtons();
+                int i = question1.FindCorrectAnswerIndex();
+
+                if (i == 0)
+                {
+                    Answer1.Background = Brushes.Green;
+                    Answer1.BorderBrush = Brushes.Black;
+                }
+                else if (i == 1)
+                {
+                    Answer2.Background = Brushes.Green;
+                    Answer2.BorderBrush = Brushes.Black;
+                }
+                else if (i == 2)
+                {
+                    Answer3.Background = Brushes.Green;
+                    Answer3.BorderBrush = Brushes.Black;
+                }
+                else if (i == 3)
+                {
+                    Answer4.Background = Brushes.Green;
+                    Answer4.BorderBrush = Brushes.Black;
+                }
+            }
+            ScoreOnTwelf.Content = $"{Score}/{ScoredisplayCount}";
         }
-
-        private void Answer2_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Answer3_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Answer4_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Scoredisplay_Click(object sender, RoutedEventArgs e)
         {
-            
+
+        }
+
+        private void DisableButtons()
+        {
+            Answer1.IsEnabled = false;
+            Answer2.IsEnabled = false;
+            Answer3.IsEnabled = false;
+            Answer4.IsEnabled = false;
+        }
+
+        private void EnableButtons()
+        {
+            Answer1.IsEnabled = true;
+            Answer2.IsEnabled = true;
+            Answer3.IsEnabled = true;
+            Answer4.IsEnabled = true;
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            elapsedTime = elapsedTime.Add(TimeSpan.FromSeconds(1));
         }
     }
 }

@@ -17,13 +17,14 @@ internal class Program
         question.showAnswer();
         Console.WriteLine($"The amount of answers: {question.CountAnswers()}");
 
-        Console.Write($"Give a question index(0-{question.CountAnswers()-1}): ");
+        Console.Write($"Give a question index(0-{question.CountAnswers() - 1}): ");
         int x = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine(question.Get(x)); 
+        Console.WriteLine(question.Get(x));
 
-        List<string> answerOptions = question.GetAnswerOptions();
-        question.Randomize(answerOptions);
+        question.Randomize();
+        Console.WriteLine(question.FindCorrectAnswerIndex());
         question.showAnswer();
+
 
     }
 }

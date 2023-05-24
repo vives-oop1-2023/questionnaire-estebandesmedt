@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.IO.Pipes;
 using System.Linq;
+using System.Reflection;
 using System.Reflection.Emit;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -15,7 +18,7 @@ namespace Questions
 
 
         public string Text { get; set; }
-        public string ImageUrl { get; set; }
+        // public string ImageUrl { get; set; }
 
         public Question()
         {
@@ -36,9 +39,9 @@ namespace Questions
         }
         public int CountAnswers()
         {
-            int length = answers.Count();
-            return length;
+            return answers.Count();
         }
+
         public void showAnswer()
         {
             foreach (Answer answ in answers)
@@ -52,43 +55,32 @@ namespace Questions
             return answers[index];
         }
 
-        public void Randomize(List<string> answerOptions)
+        public void Randomize()
         {
-            int lastIndex = answerOptions.Count - 1;
+            int lastIndex = answers.Count - 1;
+            Random random = new Random();
+
             while (lastIndex > 0)
             {
-                string tempValue = answerOptions[lastIndex];
-                int randomIndex = new Random().Next(0, lastIndex);
-                answerOptions[lastIndex] = answerOptions[randomIndex];
-                answerOptions[randomIndex] = tempValue;
+                int randomIndex = random.Next(0, lastIndex + 1);
+                Answer tempValue = answers[lastIndex];
+                answers[lastIndex] = answers[randomIndex];
+                answers[randomIndex] = tempValue;
                 lastIndex--;
             }
         }
 
-        public int CheckAnswer(string selectedAnswer)
+        public int FindCorrectAnswerIndex()
         {
-            int correctAnswerIndex = -1;
-
             for (int i = 0; i < answers.Count; i++)
             {
-                if (answers[i].Text == selectedAnswer && answers[i].IsCorrect)
+                if (answers[i].IsCorrect)
                 {
-                    correctAnswerIndex = i;
-                    break;
+                    return i;
                 }
             }
 
-            return correctAnswerIndex;
-        }
-
-        public List<string> GetAnswerOptions()
-        {
-            List<string> answerOptions = new List<string>();
-            foreach (Answer answer in answers)
-            {
-                answerOptions.Add(answer.Text);
-            }
-            return answerOptions;
+            return -1;
         }
 
     }
