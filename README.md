@@ -2,6 +2,7 @@
 by Esteban Desmedt
 <h3> UML Diagram </h3>
 <hr></hr>
+<img src="./Images/uml.jpg" alt="UML">
 
 <h3> User guide </h3>
 <hr></hr>

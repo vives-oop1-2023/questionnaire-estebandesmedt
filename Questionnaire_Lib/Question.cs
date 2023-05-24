@@ -37,7 +37,7 @@ namespace Questions
             string a = $"{Text}";
             return a;
         }
-        public int CountAnswers()
+        public int countAnswers()
         {
             return answers.Count();
         }
