@@ -19,6 +19,7 @@ namespace Questionnare
     /// </summary>
     public partial class Login : Window
     {
+        private int maxQuestion;
         public Login()
         {
             InitializeComponent();
@@ -41,5 +42,7 @@ namespace Questionnare
         {
 
         }
+
+        
     }
 }

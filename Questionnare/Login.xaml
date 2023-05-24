@@ -93,18 +93,53 @@
             VerticalAlignment="Bottom">
                 <Button
                 Height="70px"
-                    HorizontalAlignment="Left"
+                HorizontalAlignment="Left"
                 Width="250px"
                 Content="Start Playing"
                 Foreground="#FFFDFF00"
                 BorderBrush="#FFFDFF00"
                 FontSize="30px"
-            x:Name="Start" Click="Start_Click">
+                x:Name="Start" Click="Start_Click">
                     <Button.Background>
                         <ImageBrush/>
                     </Button.Background>
                 </Button>
             </StackPanel>
         </Grid>
+        <!--   <StackPanel
+            Grid.Row="2"
+            Grid.Column="3">
+            <TextBlock
+                Text="# of questions"
+                HorizontalAlignment="Center"
+                Foreground="White"/>
+            <Button
+                Height="50px"
+                Width="50px"
+                Content="5" 
+                Background="#FFFDFF00"
+                Margin="0 5" 
+                x:Name="buttonoptionfive"
+                Click="Button_Click_1"
+                />
+            <Button
+                Height="50px"
+                Width="50px"
+                Content="12" 
+                Background="#FFFDFF00"
+                Margin="0 5"/>
+            <Button
+                Height="50px"
+                Width="50px"
+                Content="20" 
+                Background="#FFFDFF00"
+                Margin="0 5"/>
+            <Button
+                Height="50px"
+                Width="50px"
+                Content="30" 
+                Background="#FFFDFF00"
+                Margin="0 5"/>
+        </StackPanel> -->
     </Grid>
 </Window>

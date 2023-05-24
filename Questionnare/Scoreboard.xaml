@@ -9,6 +9,7 @@
         MinHeight="450" MinWidth="800" 
         Background="Black"
         BorderBrush="Gray">
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10" />
@@ -101,6 +102,48 @@
                 Text="0" Foreground="White"
                 FontSize="20px" HorizontalAlignment="Center"
                     x:Name="Time"/>
+            </StackPanel>
+            <StackPanel
+                Grid.Row="2"
+                Grid.Column="1">
+                <TextBlock
+                Text="Answer Progress" Foreground="White"
+                HorizontalAlignment="Center"
+                FontSize="20px"/>
+                <ProgressBar 
+                Margin="0 6"
+                x:Name="percentageBar"
+                MinWidth="200"
+                MinHeight="20"
+                Minimum="0" 
+                Maximum="12" 
+                Value="0"/>
+            </StackPanel>
+            <StackPanel
+                Grid.Row="2"
+                Grid.Column="0">
+                <TextBlock
+                Text="" Foreground="White"
+                HorizontalAlignment="right"
+                FontSize="20px"/>
+                <TextBlock
+                Margin="5 0"
+                Text="0" Foreground="White"
+                HorizontalAlignment="right"
+                FontSize="20px"/>
+            </StackPanel>
+            <StackPanel
+                Grid.Row="2"
+                Grid.Column="2">
+                <TextBlock
+                Text="" Foreground="White"
+                HorizontalAlignment="left"
+                FontSize="20px"/>
+                <TextBlock
+                Margin="5 0"
+                Text="12" Foreground="White"
+                HorizontalAlignment="left"
+                FontSize="20px"/>
             </StackPanel>
         </Grid>
     </Grid>
