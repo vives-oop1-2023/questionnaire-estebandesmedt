@@ -16,14 +16,6 @@ Welcome to this application made by <b> Esteban Desmedt </b>. This application w
 
 </div>
 
-<style>
-@media screen and (max-width: 600px) {
-  .toc {
-    display: none;
-  }
-}
-</style>
-
 ## User guide
 Content of section 1.
 
