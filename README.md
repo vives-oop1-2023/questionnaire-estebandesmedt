@@ -10,8 +10,9 @@ Welcome to this application made by <b> Esteban Desmedt </b>. This application w
 ## Table of Contents
 
 - [User guide](#section-1)
-- [Section 2](#section-2)
-- [Section 3](#section-3)
+- [Update schedule](#section-2)
+- [Future changes](#section-3)
+- [Licensing](#section-4)
 
 </div>
 
@@ -26,18 +27,7 @@ Welcome to this application made by <b> Esteban Desmedt </b>. This application w
 ## User guide
 Content of section 1.
 
-## Section 2
-Content of section 2.
-
-## Section 3
-Content of section 3.
-
-
-<h3> User guide </h3>
-<hr></hr>
-
-<h3> Update schedule </h3>
-<hr></hr>
+## Update schedule
 <ul>
     <li> Creating the Question and Answer class in the Questionnaire library</li>
     Answer class:
@@ -58,8 +48,9 @@ Content of section 3.
     <li></li>
     <li></li>
 </ul>
-<h3> Future changes </h3>
-<hr></hr>
+
+## Future changes
+<ul>
     <li>Scoreboard implementation</li>
     <li>Checking for correct question</li>
     <li>Button turns green when correct, red when wrong</li>
@@ -70,12 +61,9 @@ Content of section 3.
     <li></li>
     <li></li>
 </ul>
-```python
-def greet(name):
-    print("Hello, " + name)
-
-greet("John")
-<h3> Licensing </h3>
-<hr></hr>
+ 
+ ## Licensing
 <p>Made by Esteban Desmedt, student @ Vives Brugge 8200, Xaveriaenenstraat 10</p>
 <p>for the Subject Object Oriented Programming (first year, phase 2) 2023</p>
+
+
