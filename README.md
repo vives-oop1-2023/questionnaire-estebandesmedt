@@ -12,7 +12,8 @@ Welcome to this application made by <b> Esteban Desmedt </b>. This application w
 - [User guide](#section-1)
 - [Update schedule](#section-2)
 - [Future changes](#section-3)
-- [Licensing](#section-4)
+- [Code explanation](#section-4)
+- [Licensing](#section-5)
 
 </div>
 
@@ -54,22 +55,36 @@ On this page you will see a few of your stats from the previous game. First you 
     <li> Adding a scoreboard</li>
     <li> Adding two new methods</li>
     <img src="./Images/NewMethod.jpg" alt="newmethod">
+    <li> Using tags</li> 
 </ul>
 
 ## Future changes
-<ul>
-    <li>Scoreboard implementation</li>
-    <li>Checking for correct question</li>
-    <li>Button turns green when correct, red when wrong</li>
-    <li>You go to the next question when answering, this change would make it possible to change the next button to a "Start" button</li>
-    <li>Disable the hovering of a button before you press the button to get the first question</li>
-    <li>"Start" button in the middle till you press start, then the questions appear and the button disappears but Adding a skip button on the spot if the "Next" button right now.</li>
-    <li></li>
-    <li></li>
-    <li></li>
+<ul> 
+
+✔ - Implemented
+✖ - Dropped
+☐ - Yet to be implemented
+
+    <li>Scoreboard implementation ✔</li>
+    <li>Checking for correct question ✔</li>
+    <li>Button turns green when correct, red when wrong ✔</li>
+    <li>Add a timer on scoreboard, showing the time spend on the game ✔</li>
+    <li>Disable the hovering of a button before you press the button to get the first question ✔</li>
+    <li>You go to the next question when answering, this change would make it possible to change the next button to a "Start" button. ✖</li>
+    <li>"Start" button in the middle till you press start, then the questions appear and the button disappears but Adding a skip button on the spot if the "Next" button right now. ✖</li>
+    <li>Making the user choose the amount of questions ☐</li>
+    <li>Adding a progress bar, showing your percentage on the scoreboard ☐</li>
 </ul>
+
+## Code explanation
+- Answer class:
+In the Answer class you find two properties containing a string called Text and a boolean named isCorrect.
+The answer method returns the combination of the text and the string.
+- Question class:
+The question class contains a list of answer, this list contains the text and boolean. In question there is also a property Text, this is for the question. The default contructor gives an empty string while the constructor adds the question. The method Add() adds the answer and boolean as type Answer to the list.
+The Get() method gives the answer on a random index. Following that the Randomize() method shuffles all the possible answers. Finally the FindCorrectAnswerIndex() method gives the index of the correct answer being usefull for showing the correct answer if the incorect one is given.
  
- ## Licensing
+## Licensing
 <p>Made by Esteban Desmedt, student @ Vives Brugge 8200, Xaveriaenenstraat 10</p>
 <p>for the Subject Object Oriented Programming (first year, phase 2) 2023</p>
 
