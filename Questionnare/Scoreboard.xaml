@@ -102,7 +102,6 @@
                 FontSize="20px" HorizontalAlignment="Center"
                     x:Name="Time"/>
             </StackPanel>
-
         </Grid>
     </Grid>
 </Window>

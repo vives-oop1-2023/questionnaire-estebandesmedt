@@ -76,7 +76,7 @@
                 TextAlignment="Left"
                 Text=" " Background="White"
                 x:Name="nickname"
-                MaxLength="1"/>
+                MaxLength="10" TextChanged="nickname_TextChanged"/>
                 <TextBlock
                     Height="70px"
                     HorizontalAlignment="Center"

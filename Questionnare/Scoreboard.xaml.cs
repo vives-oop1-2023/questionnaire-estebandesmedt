@@ -20,6 +20,7 @@ namespace Questionnare
         private int correctAnswers;
         private int incorrectAnswers;
         private TimeSpan elapsedTime;
+        private double Percentage;
 
         public Scoreboard(int total, int correct, TimeSpan elapsed)
         {
@@ -28,8 +29,7 @@ namespace Questionnare
             correctAnswers = correct;
             incorrectAnswers = total - correct;
             elapsedTime = elapsed;
-
-            // Update the TextBlocks with the respective values
+            
             TotalAnswersTextBlock.Text = totalAnswers.ToString();
             CorrectAnswersTextBlock.Text = correctAnswers.ToString();
             IncorrectAnswersTextBlock.Text = incorrectAnswers.ToString();
