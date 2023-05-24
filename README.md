@@ -32,8 +32,6 @@ Now it's up to you to choose an option. If you guess the right answer, it will t
 On this page you will see a few of your stats from the previous game. First you will find the amount of answered questions. I'm trying to implement a system so the player chooses the amount of questions before the game. In the middle you will find the amount of correctly answered questions followed by the number of incorrect ones. Finally you will find the time you spend in the game. This timer starts when you start the game and ends when you press next to go to the scoreboard.
 <img src="./Images/Score.jpg" alt="Scoreboard">
 
-
-
 ## Update schedule
 <ul>
     <li> Creating the Question and Answer class in the Questionnaire library</li>
@@ -52,8 +50,10 @@ On this page you will see a few of your stats from the previous game. First you 
     <li>"Answer" Buttons - Displaying the answers</li>
     </ul>
     <li> Coding the code behind each button and the logics connecting the triviaAPI, containing the questions, with the Question class and application</li>
-    <li></li>
-    <li></li>
+    <li> Adding a Login form</li>
+    <li> Adding a scoreboard</li>
+    <li> Adding two new methods</li>
+    <img src="./Images/newMethod.jpg" alt="newmethod">
 </ul>
 
 ## Future changes
