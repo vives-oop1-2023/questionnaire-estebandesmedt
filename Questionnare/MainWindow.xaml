@@ -57,8 +57,9 @@
             <RowDefinition Height="10" />
         </Grid.RowDefinitions>
         
-        <!-- Test Showing correct answer index -->
-        <StackPanel
+        <!-- Test Showing correct answer index, uncomment code below to see answer index
+        Also uncomment the line in Next_Click concerning this code-->
+        <!-- <StackPanel
             Grid.Row="2"
             Grid.Column="1">
             <TextBlock
@@ -67,7 +68,7 @@
                 HorizontalAlignment="Center"
                 FontSize="20px"
                 x:Name="TestBlock"/>
-        </StackPanel>
+        </StackPanel> -->
         
         
         <StackPanel
