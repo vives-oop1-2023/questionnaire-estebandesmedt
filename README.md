@@ -21,7 +21,7 @@ Welcome to this application made by <b> Esteban Desmedt </b>. This application w
 
 ## User guide
 Well how do you use the app? You will be welcomed to the next screen, here you can fill in your username. The username can contain numbers and letters and can't exceed the maximum length of 10 characters. Whenever you press the "Submit" button you will get a short welcome message. Whenever you press the "Start Playing" button you will be directed to the next page containing the game itself. Pressing the "Submit" button however isn't necessary to proceed with your username, you will only miss out on the welcome message.
-<br>
+<br><br>
 <img src="./Images/Login.jpg" alt="Login">
 
 After proceeding to the main window you will find next graphical layout. At the bottom you find your username accompanied by a question tracker to it's right. This will tell which question your on. To proceed to the first question you need to press the "Next" button.
