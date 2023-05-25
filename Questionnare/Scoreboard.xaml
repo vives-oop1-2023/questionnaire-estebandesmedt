@@ -145,6 +145,49 @@
                 HorizontalAlignment="left"
                 FontSize="20px"/>
             </StackPanel>
+            <StackPanel
+                Grid.Row="1"
+                Grid.Column="0">
+                <TextBlock
+                Text="%" Foreground="White"
+                FontSize="20px"
+                    HorizontalAlignment="Center"/>
+                <TextBlock
+                Text="0" Foreground="White"
+                FontSize="20px" HorizontalAlignment="Center"
+                    x:Name="PercentageBox"/>
+            </StackPanel>
+            <StackPanel
+                Grid.Row="1"
+                Grid.Column="2">
+                <TextBlock
+                Text="Score" Foreground="White"
+                FontSize="20px"
+                    HorizontalAlignment="Center"/>
+                <TextBlock
+                Text="0" Foreground="White"
+                FontSize="20px" HorizontalAlignment="Center"
+                x:Name="Score"/>
+            </StackPanel>
         </Grid>
+        <StackPanel
+            Grid.Row="2"
+            Grid.Column="3"
+            VerticalAlignment="Bottom">
+            <Button
+                Height="50px"
+                Width="100px"
+                Content="Restart"
+                x:Name="Restart" Click="Restart_Click"
+                VerticalAlignment="Top"
+                FontSize="20"/>
+            <Button
+                Height="50px"
+                Width="100px"
+                Margin="0 5"
+                Content="Quit"
+                FontSize="20"
+                x:Name="Close" Click="Close_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

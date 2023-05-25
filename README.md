@@ -13,7 +13,8 @@ Welcome to this application made by <b> Esteban Desmedt </b>. This application w
 - [Update schedule](#section-2)
 - [Future changes](#section-3)
 - [Code explanation](#section-4)
-- [Licensing](#section-5)
+- [Bug fixes](#section-5)
+- [Licensing](#section-6)
 
 </div>
 
@@ -82,6 +83,13 @@ The answer method returns the combination of the text and the string.
 - Question class:
 The question class contains a list of answer, this list contains the text and boolean. In question there is also a property Text, this is for the question. The default contructor gives an empty string while the constructor adds the question. The method Add() adds the answer and boolean as type Answer to the list.
 The Get() method gives the answer on a random index. Following that the Randomize() method shuffles all the possible answers. Finally the FindCorrectAnswerIndex() method gives the index of the correct answer being usefull for showing the correct answer if the incorect one is given.
+
+## Bug fixes
+<ul>
+    <li> Score calculation: when getting 12 questions right you'd get an error. This would occur because you'd have 0 wrong answer and you devide by the wrong answer --> Fixed by deviding by "Wrong answers + 1"</li>
+    <li></li>
+    <li></li>
+</ul>
  
 ## Licensing
 <p>Made by Esteban Desmedt, student @ Vives Brugge 8200, Xaveriaenenstraat 10</p>

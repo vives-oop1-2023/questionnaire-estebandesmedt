@@ -118,7 +118,7 @@
             <StackPanel
                 Grid.Row="1">
                 <Button
-                    FontSize="16px"
+                    FontSize="15px"
                     Content=""
                     Width="auto"
                     Height="auto"
@@ -142,7 +142,7 @@
             <StackPanel
                 Grid.Row="2">
                 <Button
-                    FontSize="16px"
+                    FontSize="15px"
                     Content=""
                     HorizontalAlignment="Center"
                     Width="auto"
@@ -165,7 +165,7 @@
             <StackPanel
                 Grid.Row="3">
                 <Button
-                    FontSize="16px"
+                    FontSize="15px"
                     Content=""
                     HorizontalAlignment="Center"
                     Width="auto"
@@ -188,7 +188,7 @@
             <StackPanel
                 Grid.Row="4">
                 <Button
-                    FontSize="16px"
+                    FontSize="15px"
                     Content=""
                     HorizontalAlignment="Center"
                     Width="auto"

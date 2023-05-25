@@ -141,5 +141,23 @@
                 Background="#FFFDFF00"
                 Margin="0 5"/>
         </StackPanel> -->
+        <StackPanel
+            Grid.Row="2"
+            Grid.Column="3"
+            VerticalAlignment="bottom">
+            <Button
+                    Height="50px"
+                    Width="100px"
+                    Content="About"
+                    Margin="0 25"
+                    FontSize="26px"
+                    Foreground="#FFFDFF00"
+                    BorderBrush="#FFFDFF00"
+                    x:Name="About" Click="About_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
     </Grid>
 </Window>

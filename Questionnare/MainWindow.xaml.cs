@@ -36,12 +36,13 @@ namespace Questionnare
         private TimeSpan elapsedTime;
 
 
-        public MainWindow(string nickname)
+        public MainWindow(string nickname, int maxQuestion)
         {
             InitializeComponent();
             QuestionBox.IsReadOnly = true;
             NickNameBox.Text = $"Username: {nickname}";
 
+            int AmOfQuestion = maxQuestion;
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;

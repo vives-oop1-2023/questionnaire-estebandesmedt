@@ -28,12 +28,31 @@ namespace Questionnare
             correctAnswers = correct;
             incorrectAnswers = total - correct;
             elapsedTime = elapsed;
-            
+            double percentage = (double)correctAnswers / totalAnswers * 100;
+            percentage = Math.Round(percentage, 2);
+            int ScoreCorrect = correctAnswers * 10;
+            int Scored = (ScoreCorrect / (incorrectAnswers + 1)) * 10;
+
+
             TotalAnswersTextBlock.Text = totalAnswers.ToString();
             CorrectAnswersTextBlock.Text = correctAnswers.ToString();
             IncorrectAnswersTextBlock.Text = incorrectAnswers.ToString();
             Time.Text = elapsedTime.ToString(@"mm\:ss");
             percentageBar.Value = correctAnswers;
+            PercentageBox.Text = $"{percentage:F2}";
+            Score.Text = $"{Scored}";
+        }
+
+        private void Restart_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

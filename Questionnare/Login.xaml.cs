@@ -19,7 +19,7 @@ namespace Questionnare
     /// </summary>
     public partial class Login : Window
     {
-        private int maxQuestion;
+        private int maxQuestion = 12;
         public Login()
         {
             InitializeComponent();
@@ -27,14 +27,14 @@ namespace Questionnare
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow(nickname.Text);
+            MainWindow main = new MainWindow(nickname.Text, maxQuestion);
             main.Show();
             this.Close();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow(nickname.Text);
+            MainWindow main = new MainWindow(nickname.Text, maxQuestion);
             Welcome.Text = $"Welcome{nickname.Text}";
         }
 
@@ -43,6 +43,11 @@ namespace Questionnare
 
         }
 
-        
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+            About about = new About();
+            about.Show();
+            this.Close();
+        }
     }
 }
