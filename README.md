@@ -88,7 +88,6 @@ The Get() method gives the answer on a random index. Following that the Randomiz
 <ul>
     <li>Score calculation: when getting 12 questions right you'd get an error. This would occur because you'd have 0 wrong answer and you devide by the wrong answer --> Fixed by deviding by "Wrong answers + 1"</li>
     <li>Percentage on scoreboard wouldn't show in some cases --> fixed with new formula</li>
-    <li></li>
 </ul>
  
 ## Licensing
