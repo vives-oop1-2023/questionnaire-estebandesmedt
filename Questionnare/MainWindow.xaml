@@ -233,7 +233,7 @@
                 MinHeight="30px"
                 MinWidth="40px"
                 VerticalAlignment="Bottom"
-                Content="Next!"
+                Content="Start!"
                 FontSize="40px"
                 x:Name="NextButton" Click="NextButton_Click" 
                 BorderBrush="#FFFDFF00" Foreground="#FFFDFF00">

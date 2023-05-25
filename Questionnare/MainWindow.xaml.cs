@@ -85,8 +85,15 @@ namespace Questionnare
             await TriviaApiRequester.RequestRandomQuestion(this);
             ScoreOnTwelf.Content = $"{Score}/{ScoredisplayCount}";
 
-            if (ScoredisplayCount < 12)
+            if (ScoredisplayCount < 11)
             {
+                NextButton.Content = "Next!";
+                ScoredisplayCount++;
+                Scoredisplay.Content = $"{ScoredisplayCount}/12";
+            }
+            else if (ScoredisplayCount == 11)
+            {
+                NextButton.Content = "Finish";
                 ScoredisplayCount++;
                 Scoredisplay.Content = $"{ScoredisplayCount}/12";
             }
