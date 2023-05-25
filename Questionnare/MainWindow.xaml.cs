@@ -75,6 +75,8 @@ namespace Questionnare
             Answer2.Tag = question1.Get(1);
             Answer3.Tag = question1.Get(2);
             Answer4.Tag = question1.Get(3);
+
+            TestBlock.Text = question1.FindCorrectAnswerIndex().ToString();
         }
 
         private async void NextButton_Click(object sender, RoutedEventArgs e)

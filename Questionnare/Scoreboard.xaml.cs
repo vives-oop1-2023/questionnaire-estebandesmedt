@@ -31,7 +31,7 @@ namespace Questionnare
             double percentage = (double)correctAnswers / totalAnswers * 100;
             percentage = Math.Round(percentage, 2);
             int ScoreCorrect = correctAnswers * 10;
-            int Scored = (ScoreCorrect / (incorrectAnswers + 1)) * 10;
+            int Scored = (ScoreCorrect / (incorrectAnswers + 1)) * 10 + 3;
 
 
             TotalAnswersTextBlock.Text = totalAnswers.ToString();

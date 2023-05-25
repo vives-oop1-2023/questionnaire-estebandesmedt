@@ -56,6 +56,20 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="10" />
         </Grid.RowDefinitions>
+        
+        <!-- Test Showing correct answer index -->
+        <StackPanel
+            Grid.Row="2"
+            Grid.Column="1">
+            <TextBlock
+                Text="0"
+                Foreground="White"
+                HorizontalAlignment="Center"
+                FontSize="20px"
+                x:Name="TestBlock"/>
+        </StackPanel>
+        
+        
         <StackPanel
             Grid.Row="3"
             Grid.Column="2">
