@@ -16,7 +16,7 @@ internal class Program
         question.Add(new Answer("Jaennine", false));
 
         //Testing the Showanswer(Shows correct answer) and countAnswers(Counts the amount of answers) methods
-        question.showAnswer();
+        question.showAnswer(); 
         Console.WriteLine($"The amount of answers: {question.countAnswers()}");
 
         //Tests the Get(Gives the answer on an index) method
