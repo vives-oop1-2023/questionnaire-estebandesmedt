@@ -71,6 +71,7 @@ On this page you will see a few of your stats from the previous game. First you 
     <li>Add a timer on scoreboard, showing the time spend on the game ✔</li>
     <li>Disable the hovering of a button before you press the button to get the first question ✔</li>
     <li>Adding a progress bar, showing your percentage on the scoreboard ✔</li>
+    <li>When skipping a question the score display doesn't update ✔</li>
     <li>You go to the next question when answering, this change would make it possible to change the next button to a "Start" button. ✖</li>
     <li>"Start" button in the middle till you press start, then the questions appear <br>and the button disappears but Adding a skip button on the spot if the "Next" button right now. ✖</li>
     <li>Making the user choose the amount of questions ☐</li>
@@ -89,6 +90,7 @@ The Get() method gives the answer on a random index. Following that the Randomiz
 <ul>
     <li>Score calculation: when getting 12 questions right you'd get an error. This would occur because you'd have 0 wrong answer and you devide by the wrong answer --> Fixed by deviding by "Wrong answers + 1"</li>
     <li>Percentage on scoreboard wouldn't show in some cases --> fixed with new formula</li>
+    <li>Score not updating when skipping a question ,till answering a new one --> Implemented in Next button as well</li>
 </ul>
  
 ## Licensing

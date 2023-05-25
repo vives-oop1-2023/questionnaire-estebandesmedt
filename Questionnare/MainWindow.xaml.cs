@@ -83,6 +83,7 @@ namespace Questionnare
         {
             EnableButtons();
             await TriviaApiRequester.RequestRandomQuestion(this);
+            ScoreOnTwelf.Content = $"{Score}/{ScoredisplayCount}";
 
             if (ScoredisplayCount < 12)
             {
@@ -96,7 +97,7 @@ namespace Questionnare
                 scoreboard.Show();
                 this.Close();
             }
-
+            
             //Reset of background color after answer
             Answer1.Background = default;
             Answer2.Background = default;
