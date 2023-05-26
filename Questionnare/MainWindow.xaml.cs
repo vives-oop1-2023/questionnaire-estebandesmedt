@@ -43,6 +43,7 @@ namespace Questionnare
         public MainWindow(string nickname, int maxQuestion)
         {
             InitializeComponent();
+            DisableButtons();
             QuestionBox.IsReadOnly = true;
             Nickname = nickname;
             NickNameBox.Text = $"Username: {nickname}";

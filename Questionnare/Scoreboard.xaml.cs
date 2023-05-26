@@ -37,6 +37,7 @@ namespace Questionnare
             Nickname = nickname;
 
 
+
             TotalAnswersTextBlock.Text = totalAnswers.ToString();
             CorrectAnswersTextBlock.Text = correctAnswers.ToString();
             IncorrectAnswersTextBlock.Text = incorrectAnswers.ToString();

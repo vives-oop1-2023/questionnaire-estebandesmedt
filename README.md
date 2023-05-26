@@ -21,16 +21,21 @@ Welcome to this application made by <b> Esteban Desmedt </b>. This application w
 </div>
 
 ## User guide
-Well how do you use the app? You will be welcomed to the next screen, here you can fill in your username. The username can contain numbers and letters and can't exceed the maximum length of 10 characters. Whenever you press the "Submit" button you will get a short welcome message. Whenever you press the "Start Playing" button you will be directed to the next page containing the game itself. Pressing the "Submit" button however isn't necessary to proceed with your username, you will only miss out on the welcome message.
+Well how do you use the app? You will be welcomed to the next screen, here you can fill in your username. The username can contain numbers and letters and can't exceed the maximum length of 10 characters. Whenever you press the "Start Playing" button you will be directed to the next page containing the game itself.
 <br><br>
 <img src="./Images/Login1.jpg" alt="Login">
+
+You do however get the chance to press the about button, containing some basic information about this application. I also implemented a button to go back to the starting page.
+<br><br>
+<img src="./Images/image.png" alt="image">
+
 
 After proceeding to the main window you will find next graphical layout. At the bottom you find your username accompanied by a question tracker to it's right. This will tell which question your on. To proceed to the first question you need to press the "Next" button.
 <br><br>
 <img src="./Images/Main1a.jpg" alt="Main1">
 
 
-When you press the button the request will be send for the question and the answers, more information about this follows later in the readme. Whenever the request is done you will get the question on your screen, followed by four possible answers. 
+When you press the button the request will be send for the question and the answers, more information about this follows later in the readme. Whenever the request is done you will get the question on your screen, followed by four possible answers. At the left you find the difficulty and the category.
 <br><br>
 <img src="./Images/Main2a.jpg" alt="Main2">
 
@@ -38,11 +43,11 @@ Now it's up to you to choose an option. If you guess the right answer, it will t
 <br>
 <img src="./Images/Main3a.jpg" alt="Main3">
 
-On this page you will see a few of your stats from the previous game. First you will find the amount of answered questions. I'm trying to implement a system so the player chooses the amount of questions before the game. In the middle you will find the amount of correctly answered questions followed by the number of incorrect ones. Finally you will find the time you spend in the game. This timer starts when you start the game and ends when you press next to go to the scoreboard.
+On this page you will see a few of your stats from the previous game. First you will find the amount of answered questions. I'm trying to implement a system so the player chooses the amount of questions before the game. In the middle you will find the amount of correctly answered questions followed by the number of incorrect ones. You will also find the time you spend in the game and the score you got. The timer starts when you start the game and ends when you press next to go to the scoreboard. Here you have another next button.
 <br><br>
 <img src="./Images/Scorea.jpg" alt="Scoreboard">
 
-
+To finish off you will find the leaderboard page, this page will simply display the top 5 on the app, updating with all scores. This means the other scores aren't just invented but they are other people who played the game. After admiring your placement you can choose to restart (from login) or quit.
 <img src="./Images/Leaderboard.jpg" alt="leaderboard">
 
 ## Update schedule
@@ -95,7 +100,6 @@ On this page you will see a few of your stats from the previous game. First you 
     <li>You go to the next question when answering, this change would make it possible to change the next button to a "Start" button. ✖</li>
     <li>"Start" button in the middle till you press start, then the questions appear <br>and the button disappears but Adding a skip button on the spot if the "Next" button right now. ✖</li>
     <li>Making the user choose the amount of questions ☐</li>
-    <li>When pressing a button before pressing the start button, the program crashes ☐</li>
     <li>Category and Difficulty buttons (commented code in login) ☐</li>
     
 </ul>
@@ -107,12 +111,17 @@ The answer method returns the combination of the text and the string.
 - Question class:
 The question class contains a list of answer, this list contains the text and boolean. In question there is also a property Text, this is for the question. The default contructor gives an empty string while the constructor adds the question. The method Add() adds the answer and boolean as type Answer to the list.
 The Get() method gives the answer on a random index. Following that the Randomize() method shuffles all the possible answers. Finally the FindCorrectAnswerIndex() method gives the index of the correct answer being usefull for showing the correct answer if the incorect one is given.
+- Playerscore class:
+This contains a name and a score property.
+- ScoreboardCL class:
+Here you can add scores to a list and you'll find another ToString method. Finally you will find two methods. One will add a player and score to the text file containing all scores and the other will read them out.
 
 ## Bug fixes
 <ul>
     <li>Score calculation: when getting 12 questions right you'd get an error. This would occur because you'd have 0 wrong answer and you devide by the wrong answer --> Fixed by deviding by "Wrong answers + 1"</li>
     <li>Percentage on scoreboard wouldn't show in some cases --> fixed with new formula</li>
     <li>Score not updating when skipping a question ,till answering a new one --> Implemented in Next button as well</li>
+    <li>Fixed the bug where the game crashed when pressing on the screen (one of the answer buttons) before you load the answers (press start) --> Disabled all buttons at the start</li>
 </ul>
 
 ## Sources
