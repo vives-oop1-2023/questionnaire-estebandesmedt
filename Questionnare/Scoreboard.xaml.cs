@@ -45,6 +45,7 @@ namespace Questionnare
 
         private void Restart_Click(object sender, RoutedEventArgs e)
         {
+
             Login login = new Login();
             login.Show();
             this.Close();
