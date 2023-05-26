@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using scoreboard;
 
 namespace Questionnare
 {
@@ -45,7 +46,6 @@ namespace Questionnare
 
         private void Restart_Click(object sender, RoutedEventArgs e)
         {
-
             Login login = new Login();
             login.Show();
             this.Close();

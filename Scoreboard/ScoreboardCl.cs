@@ -4,10 +4,12 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using static System.Formats.Asn1.AsnWriter;
 
-namespace scorebord
+namespace scoreboard
 {
-    class Scoreboard
+    public class ScoreboardCl
     {
         private List<Playerscore> scores = new List<Playerscore>();
 
@@ -32,7 +34,6 @@ namespace scorebord
                 output += $" {i + 1} . {sortedScores[i]}  \n";
             }
             return output;
-
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace scorebord
+namespace scoreboard
 {
     public class Playerscore
     {
@@ -15,9 +15,5 @@ namespace scorebord
         {
             return $"{Name} : {Score}";
         }
-
-
-
-
     }
 }
