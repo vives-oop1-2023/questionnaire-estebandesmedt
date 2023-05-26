@@ -34,8 +34,7 @@ namespace Questions
         }
         public override string ToString()
         {
-            string a = $"{Text}";
-            return a;
+            return $"{Text}";
         }
         public int countAnswers()
         {
@@ -79,7 +78,6 @@ namespace Questions
                     return i;
                 }
             }
-
             return -1;
         }
 

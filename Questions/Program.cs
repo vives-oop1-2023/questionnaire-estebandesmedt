@@ -9,6 +9,7 @@ internal class Program
         Question question = new Question("Who is the current president of the USA?");
         Console.WriteLine(question.ToString());
 
+
         //Adding the Answers to the list
         question.Add(new Answer("Trump", false));
         question.Add(new Answer("Obama", false));
@@ -28,7 +29,8 @@ internal class Program
         question.Randomize();
         Console.WriteLine(question.FindCorrectAnswerIndex());
         question.showAnswer();
+        Console.WriteLine($"The correct answer is: {question.Get(question.FindCorrectAnswerIndex())}");
 
-
+        
     }
 }
