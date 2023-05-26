@@ -15,7 +15,8 @@ Welcome to this application made by <b> Esteban Desmedt </b>. This application w
 - [Future changes](#section-3)
 - [Code explanation](#section-4)
 - [Bug fixes](#section-5)
-- [Licensing](#section-6)
+- [Sources](#section-6)
+- [Licensing](#section-7)
 
 </div>
 
@@ -107,6 +108,9 @@ The Get() method gives the answer on a random index. Following that the Randomiz
     <li>Percentage on scoreboard wouldn't show in some cases --> fixed with new formula</li>
     <li>Score not updating when skipping a question ,till answering a new one --> Implemented in Next button as well</li>
 </ul>
+
+## Sources
+- https://www.youtube.com/watch?v=cST5TT3OFyg
  
 ## Licensing
 <p>Made by Esteban Desmedt, student @ Vives Brugge 8200, Xaveriaenenstraat 10</p>
