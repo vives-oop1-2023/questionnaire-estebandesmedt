@@ -15,14 +15,16 @@ using scoreboard;
 
 namespace Questionnare
 {
+
     public partial class Scoreboard : Window
     {
         private int totalAnswers;
         private int correctAnswers;
         private int incorrectAnswers;
         private TimeSpan elapsedTime;
+        private string Nickname;
 
-        public Scoreboard(int total, int correct, TimeSpan elapsed)
+        public Scoreboard(int total, int correct, TimeSpan elapsed, string nickname)
         {
             InitializeComponent();
             totalAnswers = total;
@@ -31,8 +33,8 @@ namespace Questionnare
             elapsedTime = elapsed;
             double percentage = (double)correctAnswers / totalAnswers * 100;
             percentage = Math.Round(percentage, 2);
-            int ScoreCorrect = correctAnswers * 10;
-            int Scored = (ScoreCorrect / (incorrectAnswers + 1)) + 3;
+            string Scored = Convert.ToString(correctAnswers * 10);
+            Nickname = nickname;
 
 
             TotalAnswersTextBlock.Text = totalAnswers.ToString();
@@ -44,15 +46,14 @@ namespace Questionnare
             Score.Text = $"{Scored}";
         }
 
-        private void Restart_Click(object sender, RoutedEventArgs e)
+        private void Next_Click(object sender, RoutedEventArgs e)
         {
-            Login login = new Login();
-            login.Show();
-            this.Close();
-        }
+            ScoreboardCl scoreboardCl = new ScoreboardCl();
+            string Score1a = Convert.ToString(correctAnswers);
+            scoreboardCl.AddPlayerScore(Nickname, Score1a);
 
-        private void Close_Click(object sender, RoutedEventArgs e)
-        {
+            Leaderboard leaderboard = new Leaderboard();
+            leaderboard.Show();
             this.Close();
         }
     }

@@ -57,7 +57,7 @@
                 Margin="0 100"
                 FontSize="32px"
                 TextAlignment="Center"
-                Text=" " Background="White"
+                Text="" Background="White"
                 x:Name="nickname"
                 MaxLength="10" TextChanged="nickname_TextChanged"/>
                 <TextBlock

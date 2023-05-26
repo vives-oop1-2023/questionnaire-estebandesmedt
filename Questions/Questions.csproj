@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Questionnaire_Lib\Questionnaire_Lib.csproj" />
+    <ProjectReference Include="..\Scoreboard\ScoreboardClass.csproj" />
   </ItemGroup>
 
 </Project>

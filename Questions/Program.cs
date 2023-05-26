@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using scoreboard;
 
 namespace Questions;
 
@@ -6,6 +7,32 @@ internal class Program
 {
     static void Main(string[] args)
     {
+        ScoreboardCl scoreboard1 = new ScoreboardCl();
+        
+        Playerscore Playerscore = new Playerscore();
+
+        List<Playerscore> playerScores = scoreboard1.GetPlayerScores();
+
+        foreach (var playerScore in playerScores)
+        {
+            string name = playerScore.Name;
+            int scored = playerScore.Score;
+
+            Console.WriteLine($"Name: {name}, Score: {scored}");
+        }
+
+
+
+        Console.Write("What's your username?: ");
+        string Playername = Console.ReadLine();
+
+
+        Random random = new Random();
+        string score = Convert.ToString(random.Next(0, 10));
+        scoreboard1.AddPlayerScore(Playername, score);
+        
+        Console.WriteLine("Check the scores.txt file to see your changes");
+
         Question question = new Question("Who is the current president of the USA?", "medium", "Politics");
         Console.WriteLine(question.ToString());
         Console.WriteLine(question.GetDifficulty());

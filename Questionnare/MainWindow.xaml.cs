@@ -37,12 +37,14 @@ namespace Questionnare
         private bool isFirstQuestion = true;
         private DispatcherTimer timer;
         private TimeSpan elapsedTime;
+        private string Nickname;
 
 
         public MainWindow(string nickname, int maxQuestion)
         {
             InitializeComponent();
             QuestionBox.IsReadOnly = true;
+            Nickname = nickname;
             NickNameBox.Text = $"Username: {nickname}";
 
             int AmOfQuestion = maxQuestion;
@@ -104,7 +106,7 @@ namespace Questionnare
             }
             else if (ScoredisplayCount == 12)
             {
-                Scoreboard scoreboard = new Scoreboard(ScoredisplayCount, Score, elapsedTime);
+                Scoreboard scoreboard = new Scoreboard(ScoredisplayCount, Score, elapsedTime, Nickname);
                 timer.Stop();
                 scoreboard.Show();
                 this.Close();

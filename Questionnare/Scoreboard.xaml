@@ -177,17 +177,10 @@
             <Button
                 Height="50px"
                 Width="100px"
-                Content="Restart"
-                x:Name="Restart" Click="Restart_Click"
-                VerticalAlignment="Top"
-                FontSize="20"/>
-            <Button
-                Height="50px"
-                Width="100px"
                 Margin="0 5"
-                Content="Quit"
+                Content="Next"
                 FontSize="20"
-                x:Name="Close" Click="Close_Click"/>
+                x:Name="Next" Click="Next_Click"/>
         </StackPanel>
     </Grid>
 </Window>
