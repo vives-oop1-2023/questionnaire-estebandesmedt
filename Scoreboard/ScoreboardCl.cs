@@ -49,7 +49,7 @@ namespace scoreboard
 
         public List<Playerscore> GetPlayerScores()
         {
-            string filePath = @"D:\Vives\Fase 1\Semester 2\Object oriented programming\Opdrachten\Questionnaire Final\questionnaire-estebandesmedt\scores.txt";
+            string filePath = @"\Vives\Fase 1\Semester 2\Object oriented programming\Opdrachten\Questionnaire Final\questionnaire-estebandesmedt\scores.txt";
             List<string> scores = File.ReadAllLines(filePath).ToList();
 
             List<Playerscore> playerscores = new List<Playerscore>();

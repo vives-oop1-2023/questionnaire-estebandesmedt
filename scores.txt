@@ -3,8 +3,4 @@ Test 2: 0
 Test 3: 0
 Test 4: 0
 Test 5: 0
-Test 6: 0
-
-La Mamma: 8
-Sabedado: 6
-Slay: 5
+Demo Bot: 4
