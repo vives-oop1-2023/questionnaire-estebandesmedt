@@ -40,27 +40,21 @@
             Grid.Row="2"
             Grid.Column="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
+                <RowDefinition Height="5*" />
             </Grid.RowDefinitions>
             <StackPanel
-                Grid.Row="0"
-                Grid.Column="0"
-                VerticalAlignment="top"
-                HorizontalAlignment="Right">
-                
-            </StackPanel>
-            <StackPanel
-            Grid.Row="0"
-            Grid.Column="1"
+            Grid.Row="2"
+            Grid.Column="0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom">
                 <TextBox
                 Height="50px"
-                Width="300"
-                Margin="0 10"
+                Width="300px"
+                Margin="0 100"
                 FontSize="32px"
                 TextAlignment="Center"
                 Text=" " Background="White"
@@ -77,13 +71,14 @@
 
             </StackPanel>
             <StackPanel
-            Grid.Row="0"
-            Grid.Column="1"
+            Grid.Row="2"
+            Grid.Column="0"
             VerticalAlignment="Bottom">
                 <Button
-                Height="70px"
+                Height="50px"
                 HorizontalAlignment="Center"
                 Width="250px"
+                Margin="0 0 0 75"
                 Content="Start Playing"
                 Foreground="#FFFDFF00"
                 BorderBrush="#FFFDFF00"
@@ -94,6 +89,151 @@
                     </Button.Background>
                 </Button>
             </StackPanel>
+            <!-- <Grid
+                Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Button
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Height="auto"
+                    Width="auto"
+                    Margin="2"
+                    Content="Music"
+                    Foreground="#FFFDFF00"
+                    BorderBrush="#FFFDFF00"
+                    x:Name="MusicBox" Click="Music_Click">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Height="auto"
+                    Width="auto"
+                    Margin="2"
+                    Content="Sport and leisure"
+                    Foreground="#FFFDFF00"
+                    BorderBrush="#FFFDFF00">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button
+                    Grid.Column="2"
+                    Grid.Row="0"
+                    Height="auto"
+                    Width="auto"
+                    Margin="2"
+                    Content="Film and tv"
+                    Foreground="#FFFDFF00"
+                    BorderBrush="#FFFDFF00">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button
+                    Grid.Column="3"
+                    Grid.Row="0"
+                    Height="auto"
+                    Width="auto"
+                    Margin="2"
+                    Content="Arts and literature"
+                    Foreground="#FFFDFF00"
+                    BorderBrush="#FFFDFF00">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button
+                    Grid.Column="4"
+                    Grid.Row="0"
+                    Height="auto"
+                    Width="auto"
+                    Margin="2"
+                    Content="Society and culture"
+                    Foreground="#FFFDFF00"
+                    BorderBrush="#FFFDFF00">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Height="auto"
+                    Width="auto"
+                    Margin="2"
+                    Content="Science"
+                    Foreground="#FFFDFF00"
+                    BorderBrush="#FFFDFF00">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Height="auto"
+                    Width="auto"
+                    Margin="2"
+                    Content="Geography"
+                    Foreground="#FFFDFF00"
+                    BorderBrush="#FFFDFF00">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button
+                    Grid.Column="2"
+                    Grid.Row="1"
+                    Height="auto"
+                    Width="auto"
+                    Margin="2"
+                    Content="Food and Drink"
+                    Foreground="#FFFDFF00"
+                    BorderBrush="#FFFDFF00">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button
+                    Grid.Column="3"
+                    Grid.Row="1"
+                    Height="auto"
+                    Width="auto"
+                    Margin="2"
+                    Content="General knowledge"
+                    Foreground="#FFFDFF00"
+                    BorderBrush="#FFFDFF00">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button
+                    Grid.Column="4"
+                    Grid.Row="1"
+                    Height="auto"
+                    Width="auto"
+                    Margin="2"
+                    Content="All"
+                    Foreground="#FFFDFF00"
+                    BorderBrush="#FFFDFF00">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+            </Grid>-->
         </Grid>
         <!--   <StackPanel
             Grid.Row="2"

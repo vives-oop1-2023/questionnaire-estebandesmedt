@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Questionnare", "..\Question
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriviaApiLibrary", "..\TriviaApiLibrary\TriviaApiLibrary.csproj", "{58161CC4-680E-4451-BA4D-FC52D81029DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questionnaire_Lib", "..\Questionnaire_Lib\Questionnaire_Lib.csproj", "{C8AE8934-70B3-445E-BE55-70F14164E630}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Questionnaire_Lib", "..\Questionnaire_Lib\Questionnaire_Lib.csproj", "{C8AE8934-70B3-445E-BE55-70F14164E630}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
