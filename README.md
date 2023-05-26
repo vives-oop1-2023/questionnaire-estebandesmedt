@@ -27,7 +27,7 @@ Well how do you use the app? You will be welcomed to the next screen, here you c
 
 You do however get the chance to press the about button, containing some basic information about this application. I also implemented a button to go back to the starting page.
 <br><br>
-<img src="./Images/image.png" alt="image">
+<img src="./Images/About.jpg" alt="about">
 
 
 After proceeding to the main window you will find next graphical layout. At the bottom you find your username accompanied by a question tracker to it's right. This will tell which question your on. To proceed to the first question you need to press the "Next" button.
