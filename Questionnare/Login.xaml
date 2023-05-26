@@ -40,7 +40,6 @@
             Grid.Row="2"
             Grid.Column="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="3*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
@@ -51,29 +50,19 @@
                 Grid.Column="0"
                 VerticalAlignment="top"
                 HorizontalAlignment="Right">
-                <Button
-                    Height="50px"
-                    Width="100px"
-                    Content="Submit"
-                                    Margin="0 25"
-                    FontSize="26px"
-                    Foreground="#FFFDFF00"
-                    BorderBrush="#FFFDFF00" Click="Button_Click">
-                    <Button.Background>
-                        <ImageBrush/>
-                    </Button.Background>
-                </Button>
+                
             </StackPanel>
             <StackPanel
             Grid.Row="0"
             Grid.Column="1"
-                HorizontalAlignment="Left">
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom">
                 <TextBox
                 Height="50px"
                 Width="300"
-                Margin="0 25"
+                Margin="0 10"
                 FontSize="32px"
-                TextAlignment="Left"
+                TextAlignment="Center"
                 Text=" " Background="White"
                 x:Name="nickname"
                 MaxLength="10" TextChanged="nickname_TextChanged"/>
@@ -93,7 +82,7 @@
             VerticalAlignment="Bottom">
                 <Button
                 Height="70px"
-                HorizontalAlignment="Left"
+                HorizontalAlignment="Center"
                 Width="250px"
                 Content="Start Playing"
                 Foreground="#FFFDFF00"

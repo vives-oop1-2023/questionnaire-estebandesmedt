@@ -25,6 +25,9 @@ namespace Questionnare
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
+    ///Possible categroies: "music" "sport_and_leisure" "film_and_tv" "arts_and_literature" "history" "society_and_culture" "science" "geography" "food_and_drink" "general_knowledge"
     public partial class MainWindow : Window, IQuestionHandler
     {
         private int ScoredisplayCount = 0;
@@ -55,7 +58,7 @@ namespace Questionnare
                 isFirstQuestion = false;
                 timer.Start();
             }
-            question1 = new Question(question.Question.Text);
+            question1 = new Question(question.Question.Text, question.Difficulty, question.Category);
 
             question1.Text = question.Question.Text;
             question1.Add(new Answer(question.CorrectAnswer, true));
@@ -70,6 +73,8 @@ namespace Questionnare
             Answer2.Content = question1.Get(1);
             Answer3.Content = question1.Get(2);
             Answer4.Content = question1.Get(3);
+            DifficultyBox.Text = question1.Difficulty;
+            CategoryBox.Text = question1.Category;
 
             Answer1.Tag = question1.Get(0);
             Answer2.Tag = question1.Get(1);

@@ -69,6 +69,54 @@
                 FontSize="20px"
                 x:Name="TestBlock"/>
         </StackPanel> -->
+
+        
+        <!-- Difficulty and Category-->
+        <Grid
+            Grid.Row="2"
+            Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackPanel
+                Grid.Row="0"
+                VerticalAlignment="Center">
+                <TextBlock
+                    Text="Difficulty"
+                    Foreground="white"
+                    HorizontalAlignment="Center"
+                    FontSize="16px"/>
+                <TextBlock
+                    Text=""
+                    Foreground="white"
+                    HorizontalAlignment="Center"
+                    FontSize="12px"
+                    x:Name="DifficultyBox"
+                    TextWrapping="Wrap"/>
+            </StackPanel>
+            <StackPanel
+                Grid.Row="1"
+                VerticalAlignment="Center">
+                <TextBlock
+                    Text="Category"
+                    Foreground="white"
+                    HorizontalAlignment="Center"
+                    FontSize="16px"/>
+                <TextBlock
+                    Text=""
+                    Foreground="white"
+                    HorizontalAlignment="Center"
+                    FontSize="12px"
+                    x:Name="CategoryBox"
+                    TextWrapping="Wrap"/>
+            </StackPanel>
+        </Grid>
+        
         
         
         <StackPanel

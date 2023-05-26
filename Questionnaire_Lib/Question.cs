@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
 using System.IO.Pipes;
 using System.Linq;
 using System.Reflection;
@@ -18,15 +19,29 @@ namespace Questions
 
 
         public string Text { get; set; }
+        public string Difficulty { get; set; }
+        public string Category { get; set; }
         // public string ImageUrl { get; set; }
 
         public Question()
         {
             Text = "";
+            Difficulty = "";
+            Category = "";
         }
-        public Question(string question)
+        public Question(string question, string difficulty, string category)
         {
             Text = question;
+            Difficulty = difficulty;
+            Category = category;
+        }
+        public string GetDifficulty()
+        {
+            return $"{Difficulty}";
+        }
+        public string GetCategory()
+        {
+            return $"{Category}";
         }
         public void Add(Answer answ)
         {

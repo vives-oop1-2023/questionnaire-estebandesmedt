@@ -32,12 +32,6 @@ namespace Questionnare
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow main = new MainWindow(nickname.Text, maxQuestion);
-            Welcome.Text = $"Welcome{nickname.Text}";
-        }
-
         private void nickname_TextChanged(object sender, TextChangedEventArgs e)
         {
 

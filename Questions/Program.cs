@@ -6,8 +6,10 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Question question = new Question("Who is the current president of the USA?");
+        Question question = new Question("Who is the current president of the USA?", "medium", "Politics");
         Console.WriteLine(question.ToString());
+        Console.WriteLine(question.GetDifficulty());
+        Console.WriteLine(question.GetCategory());
 
 
         //Adding the Answers to the list
