@@ -51,7 +51,7 @@ namespace Questionnare
         {
             ScoreboardCl scoreboardCl = new ScoreboardCl();
             string Score1a = Convert.ToString(correctAnswers);
-            scoreboardCl.AddPlayerScore(Nickname, Score1a);
+            scoreboardCl.AddPlayerScore(Nickname, Score1a, @"..\..\..\..\Scoreboard\scores.txt");
 
             Leaderboard leaderboard = new Leaderboard();
             leaderboard.Show();

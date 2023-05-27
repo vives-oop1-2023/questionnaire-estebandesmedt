@@ -37,10 +37,9 @@ namespace scoreboard
             return output;
         }
 
-        public void AddPlayerScore(string Playername, string Score)
+        public void AddPlayerScore(string Playername, string Score, string Filepath)
         {
-
-            string filePath = @"\Vives\Fase 1\Semester 2\Object oriented programming\Opdrachten\Questionnaire Final\questionnaire-estebandesmedt\Scoreboard\scores.txt";
+            string filePath = Filepath;
             List<string> lines = File.ReadAllLines(filePath).ToList();
 
             lines.Add($"{Playername}: {Score}");
@@ -49,7 +48,7 @@ namespace scoreboard
 
         public List<Playerscore> GetPlayerScores()
         {
-            string filePath = @"\Vives\Fase 1\Semester 2\Object oriented programming\Opdrachten\Questionnaire Final\questionnaire-estebandesmedt\Scoreboard\scores.txt";
+            string filePath = @"..\..\..\..\Scoreboard\scores.txt";
             List<string> scores = File.ReadAllLines(filePath).ToList();
 
             List<Playerscore> playerscores = new List<Playerscore>();

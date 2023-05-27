@@ -6,3 +6,6 @@ Test 5: 0
 Pitbully: 5
 P: 1
 a: 5
+p: 2
+HelloWorld: 2
+Hey: 3
