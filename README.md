@@ -4,6 +4,7 @@ Welcome to this application made by <b> Esteban Desmedt </b>. This application w
 <hr></hr>
 <br>
 <img src="./Images/uml.jpg" alt="UML">
+<img src="./Images/uml2.jpg" alt="UML">
 
 
 <div class="toc">
