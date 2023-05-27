@@ -11,7 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 using scoreboard;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace Questionnare
 {
@@ -53,6 +55,14 @@ namespace Questionnare
             ScoreboardCl scoreboardCl = new ScoreboardCl();
             string Score1a = Convert.ToString(correctAnswers * 1000 - (Convert.ToInt32(elapsedTime.Seconds) * 10) - (incorrectAnswers * 10));
 
+            if (Nickname == "" || Nickname == " " || Nickname == "  " || Nickname == "   " || Nickname == "    " || Nickname == "     " )
+            {
+                Random random = new Random();
+                int ran1 = random.Next(0, 1000);
+                int ran2 = random.Next(0, 1000);
+
+                Nickname = $"User{Score1a}{ran1 - ran2}";
+            }
             scoreboardCl.AddPlayerScore(Nickname, Score1a, @"..\..\..\..\Scoreboard\scores.txt");
 
             Leaderboard leaderboard = new Leaderboard();

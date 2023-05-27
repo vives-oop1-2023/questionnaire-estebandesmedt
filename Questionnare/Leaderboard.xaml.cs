@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace Questionnare
 {
@@ -42,9 +43,11 @@ namespace Questionnare
             // Iterate over the sorted player scores and update the text blocks
             for (int i = 0; i < playerScores.Count && i < 5; i++)
             {
+
                 string name = playerScores[i].Name;
                 int score = playerScores[i].Score;
 
+                
 
                 First.Text = $"1. {playerScores[0].Name}: {playerScores[0].Score}";
                 Second.Text = $"2. {playerScores[1].Name}: {playerScores[1].Score}";
