@@ -65,6 +65,8 @@ namespace Questionnare
             }
             scoreboardCl.AddPlayerScore(Nickname, Score1a, @"..\..\..\..\Scoreboard\scores.txt");
 
+            Nickname = "";
+
             Leaderboard leaderboard = new Leaderboard();
             leaderboard.Show();
             this.Close();
