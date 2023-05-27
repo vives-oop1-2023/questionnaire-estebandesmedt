@@ -44,13 +44,14 @@ namespace Questionnare
             Time.Text = elapsedTime.ToString(@"mm\:ss");
             percentageBar.Value = correctAnswers;
             PercentageBox.Text = $"{percentage:F2}";
-            Score.Text = $"{Scored}";
+            string Score1a = Convert.ToString(correctAnswers * 1000 - (Convert.ToInt32(elapsedTime.Seconds) * 10));
+            Score.Text = $"{Score1a}";
         }
 
         private void Next_Click(object sender, RoutedEventArgs e)
         {
             ScoreboardCl scoreboardCl = new ScoreboardCl();
-            string Score1a = Convert.ToString(correctAnswers);
+            string Score1a = Convert.ToString(correctAnswers * 1000 - (Convert.ToInt32(elapsedTime.Seconds) * 10));
             scoreboardCl.AddPlayerScore(Nickname, Score1a, @"..\..\..\..\Scoreboard\scores.txt");
 
             Leaderboard leaderboard = new Leaderboard();

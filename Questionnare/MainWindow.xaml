@@ -68,7 +68,7 @@
                 HorizontalAlignment="Center"
                 FontSize="20px"
                 x:Name="TestBlock"/>
-        </StackPanel> -->
+        </StackPanel>  -->
 
         
         <!-- Difficulty and Category-->
