@@ -156,7 +156,7 @@
             <StackPanel
                 Grid.Row="0">
                 <TextBox
-                    FontSize="22px"
+                    FontSize="20px"
                     Text=""
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
@@ -180,19 +180,27 @@
             </StackPanel>
             <StackPanel
                 Grid.Row="1">
-                <Button
+                <Button Content=""
+                    Width="Auto"
+                    Height="Auto"
                     FontSize="15px"
-                    Content=""
-                    Width="auto"
-                    Height="auto"
-                    MinHeight="55px"
+                    MinHeight="55"
                     x:Name="Answer1"
-                    MinWidth="400px" Click="Answer_Click"
+                    MinWidth="400"
+                    Click="Answer_Click"
                     Foreground="White"
                     HorizontalAlignment="Center"
-                    Margin="5px"
-                    Style="{StaticResource DisabledButtonStyle}"
-                    >
+                    Margin="5"
+                    Style="{StaticResource DisabledButtonStyle}">
+                    <Button.ContentTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}"
+                       TextWrapping="Wrap"
+                       TextTrimming="CharacterEllipsis"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+                        </DataTemplate>
+                    </Button.ContentTemplate>
                     <Button.BorderBrush>
                         <ImageBrush/>
                     </Button.BorderBrush>
@@ -200,23 +208,31 @@
                         <ImageBrush/>
                     </Button.Background>
                 </Button>
-
             </StackPanel>
+
             <StackPanel
                 Grid.Row="2">
-                <Button
+                <Button Content=""
+                    Width="Auto"
+                    Height="Auto"
                     FontSize="15px"
-                    Content=""
-                    HorizontalAlignment="Center"
-                    Width="auto"
-                    Margin="5px"
-                    MinHeight="55px"
-                    MinWidth="400px"
-                    Height="auto"
-                    x:Name="Answer2" Click="Answer_Click"
+                    MinHeight="55"
+                    x:Name="Answer2"
+                    MinWidth="400"
+                    Click="Answer_Click"
                     Foreground="White"
-                    Style="{StaticResource DisabledButtonStyle}"
-                    >
+                    HorizontalAlignment="Center"
+                    Margin="5"
+                    Style="{StaticResource DisabledButtonStyle}">
+                    <Button.ContentTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}"
+                       TextWrapping="Wrap"
+                       TextTrimming="CharacterEllipsis"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+                        </DataTemplate>
+                    </Button.ContentTemplate>
                     <Button.BorderBrush>
                         <ImageBrush/>
                     </Button.BorderBrush>
@@ -227,19 +243,27 @@
             </StackPanel>
             <StackPanel
                 Grid.Row="3">
-                <Button
+                <Button Content=""
+                    Width="Auto"
+                    Height="Auto"
                     FontSize="15px"
-                    Content=""
-                    HorizontalAlignment="Center"
-                    Width="auto"
-                    MinWidth="400px"
-                    Height="auto"
-                    MinHeight="55px"
-                    Margin="5px"
-                    x:Name="Answer3" Click="Answer_Click"
+                    MinHeight="55"
+                    x:Name="Answer3"
+                    MinWidth="400"
+                    Click="Answer_Click"
                     Foreground="White"
-                    Style="{StaticResource DisabledButtonStyle}"
-                    >
+                    HorizontalAlignment="Center"
+                    Margin="5"
+                    Style="{StaticResource DisabledButtonStyle}">
+                    <Button.ContentTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}"
+                       TextWrapping="Wrap"
+                       TextTrimming="CharacterEllipsis"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+                        </DataTemplate>
+                    </Button.ContentTemplate>
                     <Button.BorderBrush>
                         <ImageBrush/>
                     </Button.BorderBrush>
@@ -248,29 +272,38 @@
                     </Button.Background>
                 </Button>
             </StackPanel>
+
             <StackPanel
                 Grid.Row="4">
-                <Button
+                    <Button Content=""
+                    Width="Auto"
+                    Height="Auto"
                     FontSize="15px"
-                    Content=""
-                    HorizontalAlignment="Center"
-                    Width="auto"
-                    Height="auto"
-                    Margin="5px"
-                    MinHeight="55px"
+                    MinHeight="55"
                     x:Name="Answer4"
-                    MinWidth="400px" Click="Answer_Click"
+                    MinWidth="400"
+                    Click="Answer_Click"
                     Foreground="White"
-                    Style="{StaticResource DisabledButtonStyle}"
-                    >
+                    HorizontalAlignment="Center"
+                    Margin="5"
+                    Style="{StaticResource DisabledButtonStyle}">
+                    <Button.ContentTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}"
+                       TextWrapping="Wrap"
+                       TextTrimming="CharacterEllipsis"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+                        </DataTemplate>
+                    </Button.ContentTemplate>
                     <Button.BorderBrush>
-                        <ImageBrush/>
-                    </Button.BorderBrush>
-                    <Button.Background>
-                        <ImageBrush/>
-                    </Button.Background>
-                </Button>
-            </StackPanel>
+                            <ImageBrush/>
+                        </Button.BorderBrush>
+                        <Button.Background>
+                            <ImageBrush/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
         </Grid>
         <StackPanel
             Grid.Column="3"

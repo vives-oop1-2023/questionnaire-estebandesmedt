@@ -45,6 +45,7 @@ namespace Questionnare
                 string name = playerScores[i].Name;
                 int score = playerScores[i].Score;
 
+
                 First.Text = $"1. {playerScores[0].Name}: {playerScores[0].Score}";
                 Second.Text = $"2. {playerScores[1].Name}: {playerScores[1].Score}";
                 Third.Text = $"3. {playerScores[2].Name}: {playerScores[2].Score}";
