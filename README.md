@@ -123,6 +123,7 @@ Here you can add scores to a list and you'll find another ToString method. Final
     <li>Percentage on scoreboard wouldn't show in some cases --> fixed with new formula</li>
     <li>Score not updating when skipping a question ,till answering a new one --> Implemented in Next button as well</li>
     <li>Fixed the bug where the game crashed when pressing on the screen (one of the answer buttons) before you load the answers (press start) --> Disabled all buttons at the start</li>
+    <li>When no username given a random Username will be generated</li>
 </ul>
 
 ## Sources
