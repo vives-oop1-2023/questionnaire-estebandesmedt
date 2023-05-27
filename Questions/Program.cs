@@ -11,7 +11,7 @@ internal class Program
         
         Playerscore Playerscore = new Playerscore();
 
-        List<Playerscore> playerScores = scoreboard1.GetPlayerScores();
+        List<Playerscore> playerScores = scoreboard1.GetPlayerScores(@"..\..\..\..\Scoreboard\scores.txt");
 
         foreach (var playerScore in playerScores)
         {
@@ -29,8 +29,8 @@ internal class Program
 
         Random random = new Random();
         string score = Convert.ToString(random.Next(0, 10));
-        scoreboard1.AddPlayerScore(Playername, score);
-        
+        scoreboard1.AddPlayerScore(Playername, score, @"..\..\..\..\Scoreboard\scores.txt");
+        /*
         Console.WriteLine("Check the scores.txt file to see your changes");
 
         Question question = new Question("Who is the current president of the USA?", "medium", "Politics");
@@ -60,6 +60,6 @@ internal class Program
         question.showAnswer();
         Console.WriteLine($"The correct answer is: {question.Get(question.FindCorrectAnswerIndex())}");
 
-        
+        */
     }
 }

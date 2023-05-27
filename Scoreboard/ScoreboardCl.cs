@@ -46,9 +46,9 @@ namespace scoreboard
             File.WriteAllLines(filePath, lines );
         }
 
-        public List<Playerscore> GetPlayerScores()
+        public List<Playerscore> GetPlayerScores(string Filepath)
         {
-            string filePath = @"..\..\..\..\Scoreboard\scores.txt";
+            string filePath = Filepath;
             List<string> scores = File.ReadAllLines(filePath).ToList();
 
             List<Playerscore> playerscores = new List<Playerscore>();

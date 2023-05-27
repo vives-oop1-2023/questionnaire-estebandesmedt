@@ -28,7 +28,7 @@ namespace Questionnare
             ScoreboardCl scoreboard1 = new ScoreboardCl();
             Playerscore Playerscore = new Playerscore();
 
-            List<Playerscore> playerScores = scoreboard1.GetPlayerScores();
+            List<Playerscore> playerScores = scoreboard1.GetPlayerScores(@"..\..\..\..\Scoreboard\scores.txt");
 
             foreach (var playerScore in playerScores)
             {
