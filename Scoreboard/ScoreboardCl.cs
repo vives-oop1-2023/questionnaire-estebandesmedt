@@ -73,26 +73,6 @@ namespace scoreboard
             return playerscores;
         }
 
-
-
-        /* public List<Playerscore> GetPlayerScores()
-        {
-            string filePath = @"D:\Vives\Fase 1\Semester 2\Object oriented programming\Opdrachten\Questionnaire Final\questionnaire-estebandesmedt\scores.txt";
-            List<string> scores = File.ReadAllLines(filePath).ToList();
-            
-            List<Playerscore> playerscores = new List<Playerscore>();
-            foreach(var score in scores)
-            {
-                string[] entries = score.Split(":");
-                Playerscore playerscore = new Playerscore();
-
-                playerscore.Name = entries[0];
-                playerscore.Score = Convert.ToInt32(entries[1]);
-
-                playerscores.Add(playerscore);
-            }
-            return playerscores;
-        } */
     }
 }
 

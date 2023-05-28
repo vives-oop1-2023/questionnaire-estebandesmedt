@@ -29,11 +29,11 @@ namespace Questions
             Difficulty = "";
             Category = "";
         }
-        public Question(string question, string difficulty, string category)
+        public Question(string Text, string Difficulty, string Category)
         {
-            Text = question;
-            Difficulty = difficulty;
-            Category = category;
+            this.Text = Text;
+            this.Difficulty = Difficulty;
+            this.Category = Category;
         }
         public string GetDifficulty()
         {
