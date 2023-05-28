@@ -64,7 +64,7 @@
             <StackPanel
                 Grid.Row="5">
                 <TextBlock
-                    Text="Last updated: 26/05/2023"
+                    Text="Last updated: 28/05/2023"
                     Foreground="White"
                     HorizontalAlignment="Center"/>
             </StackPanel>
