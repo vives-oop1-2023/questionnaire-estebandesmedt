@@ -46,7 +46,15 @@ namespace Questionnare
             DisableButtons();
             QuestionBox.IsReadOnly = true;
             Nickname = nickname;
-            NickNameBox.Text = $"Username: {nickname}";
+            if (Nickname == "" || Nickname == " " || Nickname == "  " || Nickname == "   " || Nickname == "    " || Nickname == "     ")
+            {
+                NickNameBox.Text = "";
+            }
+            else
+            {
+                NickNameBox.Text = $"Username: {nickname}";
+            }
+                
 
             int AmOfQuestion = maxQuestion;
             timer = new DispatcherTimer();

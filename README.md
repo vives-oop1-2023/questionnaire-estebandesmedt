@@ -1,6 +1,6 @@
 # Questionnaire Application
 Welcome to this application made by <b> Esteban Desmedt </b>. This application was made as part of a school project. The program was made entirely in C# and developed for the subject Object Oriënted Programming, given at Vives (Xaveriaenenstraat 10, 8200 Brugge).
-<h3> UML Diagram </h3>
+<h3> UML Diagrams </h3>
 <hr></hr>
 <br>
 <img src="./Images/UMLA.jpg" alt="UML">
@@ -22,7 +22,7 @@ Welcome to this application made by <b> Esteban Desmedt </b>. This application w
 </div>
 
 ## User guide
-Well how do you use the app? You will be welcomed to the next screen, here you can fill in your username. The username can contain numbers and letters and can't exceed the maximum length of 10 characters. Whenever you press the "Start Playing" button you will be directed to the next page containing the game itself.
+Well how do you use the app? You will be welcomed to the next screen, here you can fill in your username. The username can contain numbers and letters and can't exceed the maximum length of 10 characters. Whenever you press the "Start Playing" button you will be directed to the next page containing the game itself. Meanwhile your username will be passed on to the Main window.
 <br><br>
 <img src="./Images/Login1.jpg" alt="Login">
 
