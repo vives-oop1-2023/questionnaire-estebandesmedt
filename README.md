@@ -49,7 +49,7 @@ On this page you will see a few of your stats from the previous game. First you 
 <img src="./Images/Scorea.jpg" alt="Scoreboard">
 
 To finish off you will find the leaderboard page, this page will simply display the top 5 on the app, updating with all scores. This means the other scores aren't just invented but they are other people who played the game. After admiring your placement you can choose to restart (from login) or quit.
-<img src="./Images/Leaderboard.jpg" alt="leaderboard">
+<img src="./Images/Leaderboard2.jpg" alt="leaderboard">
 
 ## Update schedule
 <ul>
