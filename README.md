@@ -89,7 +89,7 @@ To finish off you will find the leaderboard page, this page will simply display 
     Scoreboard class: 
     <img src="./Images/Scoreboard1.jpg" alt="Scoreboard1">
     <br>
-    <img src="./Images/Scoreboard2.jpg" alt="Scoreboard2">
+    <img src="./Images/Scoreboard2.jpg" alt="Scoreboard2" width="1000px">
 </ul>
 
 ## Future changes
