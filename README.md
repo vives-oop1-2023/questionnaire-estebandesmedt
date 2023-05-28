@@ -60,7 +60,9 @@ To finish off you will find the leaderboard page, this page will simply display 
     Question class:
     <br><br>
     <img src="./Images/QuestionClass1.jpg" alt="QuestionClass1">
+    <br>
     <img src="./Images/QuestionClass2.jpg" alt="QuestionClass2">
+    <br>
     <img src="./Images/QuestionClass3.jpg" alt="QuestionClass3">
     <br></br>
     <li> Designing the WPF application layout</li>
@@ -80,6 +82,14 @@ To finish off you will find the leaderboard page, this page will simply display 
     <li> Adding a leaderboard</li>
     <li> Making a saveable leaderboard</li>
     <li> Displaying the difficulty and category</li>
+    <li> Added Playerscore and Scoreboard class</li>
+    Playerscore class:
+    <img src="./Images/Playerscore.jpg" alt="playerscore">
+    <br>
+    Scoreboard class: 
+    <img src="./Images/Scoreboard1.jpg" alt="Scoreboard1">
+    <br>
+    <img src="./Images/Scoreboard2.jpg" alt="Scoreboard2">
 </ul>
 
 ## Future changes
