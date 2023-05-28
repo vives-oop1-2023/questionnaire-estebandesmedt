@@ -51,10 +51,16 @@
             Grid.Column="0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom">
+                <TextBlock
+                    Text="Fill in username:"
+                    HorizontalAlignment="Center"
+                    Foreground="White"
+                    FontSize="30"
+                    Margin="0 0 0 0"/>
                 <TextBox
                 Height="50px"
                 Width="300px"
-                Margin="0 100"
+                Margin="0 0 0 80"
                 FontSize="32px"
                 TextAlignment="Center"
                 Text="" Background="White"

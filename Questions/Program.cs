@@ -28,7 +28,14 @@ internal class Program
 
 
         Random random = new Random();
-        string score = Convert.ToString(random.Next(0, 10));
+        string score = Convert.ToString(random.Next(0, 50));
+        if (Playername == "" || Playername == " " || Playername == "  ")
+        {
+            int ran1 = random.Next(0, 1000);
+            int ran2 = random.Next(0, 1000);
+
+            Playername = $"User{score}{ran1 - ran2}";
+        }
         scoreboard1.AddPlayerScore(Playername, score, @"..\..\..\..\Scoreboard\scores.txt");
         /*
         Console.WriteLine("Check the scores.txt file to see your changes");
