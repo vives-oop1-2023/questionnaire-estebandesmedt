@@ -51,7 +51,7 @@ On this page you will see a few of your stats from the previous game. First you 
 To finish off you will find the leaderboard page, this page will simply display the top 5 on the app, updating with all scores. This means the other scores aren't just invented but they are other people who played the game. After admiring your placement you can choose to restart (from login) or quit. If you did not fill in a name at the start you'll get a random username assigned. This username exist of the word user followed by the score you got and then two randomly generated numbed will be subtracted by each other to end the digits of your username. All usernames and scores will be saved in a textfile which you pull together with the repository (Scoreboard folder).
 <img src="./Images/Leaderboard2.jpg" alt="leaderboard">
 <br>
-<img src="./Images/Textfile.jpg.jpg" alt="textfile">
+<img src="./Images/Textfile.jpg" alt="textfile">
 
 ## Update schedule
 <ul>
