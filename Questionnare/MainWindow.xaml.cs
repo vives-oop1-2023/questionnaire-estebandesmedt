@@ -45,8 +45,8 @@ namespace Questionnare
             InitializeComponent();
             DisableButtons();
             QuestionBox.IsReadOnly = true;
-            Nickname = nickname;
-            if (Nickname == "" || Nickname == " " || Nickname == "  " || Nickname == "   " || Nickname == "    " || Nickname == "     ")
+            Nickname = nickname.Trim();
+            if (Nickname == "")
             {
                 NickNameBox.Text = "";
             }
