@@ -56,6 +56,14 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="10" />
         </Grid.RowDefinitions>
+        <StackPanel
+            Grid.Row="3"
+            Grid.Column="1">
+            <TextBlock
+                FontSize="20px"
+                Foreground="White"
+                x:Name="TimerBox"/>
+        </StackPanel>
         
         <!-- Test Showing correct answer index, uncomment code below to see answer index
         Also uncomment the line in Next_Click concerning this code-->

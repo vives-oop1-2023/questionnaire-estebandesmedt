@@ -60,6 +60,8 @@ namespace Questionnare
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
+            
+
         }
 
         public void ProcessQuestion(TriviaMultipleChoiceQuestion question)
@@ -94,6 +96,7 @@ namespace Questionnare
 
             //Correct answer index show
             //TestBlock.Text = question1.FindCorrectAnswerIndex().ToString();
+            
         }
 
         private async void NextButton_Click(object sender, RoutedEventArgs e)
@@ -204,6 +207,8 @@ namespace Questionnare
         private void Timer_Tick(object sender, EventArgs e)
         {
             elapsedTime = elapsedTime.Add(TimeSpan.FromSeconds(1));
+            TimerBox.Text = Convert.ToString(elapsedTime);
+
         }
     }
 }
