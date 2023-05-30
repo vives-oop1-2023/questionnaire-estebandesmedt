@@ -37,7 +37,7 @@ internal class Program
             Playername = $"User{score}{ran1 - ran2}";
         }
         scoreboard1.AddPlayerScore(Playername, score, @"..\..\..\..\Scoreboard\scores.txt");
-        /*
+        
         Console.WriteLine("Check the scores.txt file to see your changes");
 
         Question question = new Question("Who is the current president of the USA?", "medium", "Politics");
@@ -67,6 +67,6 @@ internal class Program
         question.showAnswer();
         Console.WriteLine($"The correct answer is: {question.Get(question.FindCorrectAnswerIndex())}");
 
-        */
+        
     }
 }
